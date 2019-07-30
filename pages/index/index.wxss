@@ -1,21 +1,26 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* 头部样式 */
+.index-header {
+  width: 100%;
+  height: 100rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/* 主体样式 */
+.index-content {
+  width: 100%;
+  height: 100%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.index-content .menu-item {
+  float: left;
+  margin: 0 0 0 50rpx;
+  width: 300rpx;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
 }
 
-.usermotto {
-  margin-top: 200px;
+.index-content .menu-item:nth-child(n + 3) {
+  margin: 50rpx 0 0 50rpx;
 }

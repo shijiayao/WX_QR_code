@@ -1,10 +1,26 @@
-/**app.wxss**/
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}

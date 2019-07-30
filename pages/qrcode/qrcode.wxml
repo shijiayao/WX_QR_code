@@ -1,0 +1,16 @@
+<view class="container">
+  <!-- 二维码显示区域 -->
+  <view class="qrcode-box">
+    <image class="qrcode-image" show-menu-by-longpress src="{{QR_image}}"></image>
+  </view>
+
+  <!-- 内容输入区域 -->
+  <view class="coutent-text">
+    <input class="text-input" type="text" placeholder="请输入需要生成二维码的内容" auto-focus bindinput="bindKeyInput"></input>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="button-generat">
+    <button type="primary" bindtap="generatQRCode">生成二维码</button>
+  </view>
+</view>
